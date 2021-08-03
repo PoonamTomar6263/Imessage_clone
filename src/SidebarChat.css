@@ -1,0 +1,32 @@
+.sidebarChat{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+    
+    cursor: pointer;
+}
+
+
+.sidebarChat :hover{
+    /* background-color: rgb(231, 99, 248); */
+    cursor: pointer;
+
+}
+.sidebarChat_info{
+    display: flex;
+    margin-left: 15px;
+    position: relative;
+    width: 100%;
+
+}
+
+.sidebarChat{
+    border-radius: 20px;
+    background-color: rgb(226, 200, 250);
+   margin-bottom: 10px;
+ }
+
+.sidebarChat_info .second{
+ margin-left: 200px;
+}

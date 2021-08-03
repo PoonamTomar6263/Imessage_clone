@@ -1,0 +1,28 @@
+import { createSlice } from '@reduxjs/toolkit';
+
+export const chatSlice = createSlice({
+  name: 'chat',
+  initialState:{
+    chatId:null,
+    chatName:null,
+  },
+  // The `reducers` field lets us define reducers and generate associated actions
+  reducers: {
+    setChat: (state,action) => {
+      state.chatId = action.payload.chatId;
+      state.chatName = action.payload.chatName;
+    },
+    // logOut: state => {
+    //   state.chat = null;
+    
+    // },
+  },
+});
+
+
+
+export const { setChat } = chatSlice.actions;
+
+export const selectChatId = (state) => state.chat.chatId;
+export const selectChatName = (state) => state.chat.chatName;
+export default chatSlice.reducer;
